@@ -36,7 +36,6 @@ const getScoreAsync = async (widgetId) => {
 };
 
 const addFooterToPredictionAsync = async (widget, element) => {
-  console.log(widget, element);
   const body = element.querySelector('livelike-widget-body');
   if (body) {
     let widgetId = ""
