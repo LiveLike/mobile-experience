@@ -32,21 +32,22 @@ const appendCss = ({ css }) => {
     document.head.appendChild(document.createElement("style")).innerHTML = css;
 };
 
-const getStyleConfig = async ({ chatroomId }) => {
+const getConfig = async ({ chatroomId }) => {
     var chatRoom = await getChatroomAsync({ chatroomId });
     return {
         style: {
+            font: "",
             colors: {
-                PageBackground: "",
-                WidgetBackground: "",
-                WidgetOptionBackground: "",
-                TextColor: "",
-                ButtonBackground: "",
-                RightOptionBorder: "",
-                WrongOptionBorder: "",
-                SelectedOption: "",
-                TabInactive: "",
-                TabActive: ""
+                PageBackground: "#1",
+                WidgetBackground: "#2",
+                WidgetOptionBackground: "#3",
+                TextColor: "#4",
+                ButtonBackground: "#",
+                RightOptionBorder: "#",
+                WrongOptionBorder: "#",
+                SelectedOption: "#",
+                TabInactive: "#",
+                TabActive: "#"
             }
         }
     };
@@ -72,11 +73,16 @@ const getRawFileContentAsync = async ({ path }) => {
 }
 
 const loadStyleAsync = async ({ chatroomId, styles }) => {
-    const styleConfig = await getStyleConfig({ chatroomId });
-    console.log(styleConfig);
+    const config = await getConfig({ chatroomId });
     for (const stylePath of styles) {
         {
-            const css = await getRawFileContentAsync({ path: stylePath });
+            let css = await getRawFileContentAsync({ path: stylePath });
+
+            // replace colors
+            for (const key in config.style.colors) {
+                css = css.replace(`%%${key}%%`, config.style.colors[key]);
+            }
+
             appendCss({ css });
         }
     }

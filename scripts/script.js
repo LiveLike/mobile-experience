@@ -29,7 +29,6 @@ const handleWidgetsScrolling = () => {
 
 const getScoreAsync = async (widgetId) => {
   const response = await LiveLike.getRewardTransactions({ widgetIds: [widgetId] });
-  console.log(response.results);
   return {
     rewardItemAmount: response.results.map(x => x.reward_item_amount).reduce((accumulator, currentValue) => accumulator + currentValue, 0),
     rewardItemName: response.results.length ? response.results[0].reward_item_name : null
