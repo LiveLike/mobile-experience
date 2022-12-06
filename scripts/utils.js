@@ -11,7 +11,6 @@ const getProgramId = () => {
 };
 
 const getProgramAsync = async ({ programId }) => {
-    console.log(programId)
     const response = await fetch(`${baseUrl}/programs/${programId}/`);
     if (response.ok) {
         const program = await response.json();
@@ -20,17 +19,39 @@ const getProgramAsync = async ({ programId }) => {
     console.error("Invalid program id!");
 };
 
-const getLeaderboardIdAsync = async ({ programId }) => {
-    console.log(programId)
-    const response = await fetch(`${baseUrl}/programs/${programId}/`);
+const getChatroomAsync = async ({ chatroomId }) => {
+    const response = await fetch(`${baseUrl}/chat-rooms/${chatroomId}/`);
     if (response.ok) {
-        const program = await response.json();
-        if (program && program.leaderboards && program.leaderboards.length) {
-            return program.leaderboards[0].id;
-        }
-        console.error("The program has no linked leaderboards!");
+        const chatRoom = await response.json();
+        return chatRoom;
     }
-    console.error("Invalid program id!");
+    console.error("Invalid chat room id!");
+};
+
+const getStyleConfig = async ({ chatroomId }) => {
+    var chatRoom = await getChatroomAsync({ chatroomId });
+    return {
+        style: {
+            colors: {
+                PageBackground: "",
+                WidgetBackground: "",
+                WidgetOptionBackground: "",
+                TextColor: "",
+                ButtonBackground: "",
+                RightOptionBorder: "",
+                WrongOptionBorder: "",
+                SelectedOption: "",
+                TabInactive: "",
+                TabActive: ""
+            }
+        }
+    };
+
+    if (!(chatRoom && chatRoom.custom_data)) {
+        console.error("chatroom is not configured or missing custom_data");
+    }
+    console.log(JSON.parse(chatRoom.custom_data));
+    return JSON.parse(chatRoom.custom_data);
 };
 
 const profileIsValid = () => {
