@@ -28,6 +28,10 @@ const getChatroomAsync = async ({ chatroomId }) => {
     console.error("Invalid chat room id!");
 };
 
+const appendCss = ({ css }) => {
+    document.head.appendChild(document.createElement("style")).innerHTML = css;
+};
+
 const getStyleConfig = async ({ chatroomId }) => {
     var chatRoom = await getChatroomAsync({ chatroomId });
     return {
@@ -52,6 +56,30 @@ const getStyleConfig = async ({ chatroomId }) => {
     }
     console.log(JSON.parse(chatRoom.custom_data));
     return JSON.parse(chatRoom.custom_data);
+};
+
+const getRawFileContentAsync = async ({ path }) => {
+    const response = await fetch(path, {
+        headers: {
+            "Content-Type": "text/plain"
+        }
+    });
+    if (response.ok) {
+        const content = await response.text();
+        return content;
+    }
+    console.error(`Invalid file path!, cannot fetch ${path}`);
+}
+
+const loadStyleAsync = async ({ chatroomId, styles }) => {
+    const styleConfig = await getStyleConfig({ chatroomId });
+    console.log(styleConfig);
+    for (const stylePath of styles) {
+        {
+            const css = await getRawFileContentAsync({ path: stylePath });
+            appendCss({ css });
+        }
+    }
 };
 
 const profileIsValid = () => {
