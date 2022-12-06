@@ -10,6 +10,16 @@ const getProgramId = () => {
     return getQueryParam("program_id");
 };
 
+const getProgramAsync = async ({ programId }) => {
+    console.log(programId)
+    const response = await fetch(`${baseUrl}/programs/${programId}/`);
+    if (response.ok) {
+        const program = await response.json();
+        return program;
+    }
+    console.error("Invalid program id!");
+};
+
 const getLeaderboardIdAsync = async ({ programId }) => {
     console.log(programId)
     const response = await fetch(`${baseUrl}/programs/${programId}/`);

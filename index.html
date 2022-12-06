@@ -99,16 +99,15 @@
     <script src="scripts/script.js"></script>
     <script>
       const baseUrl = "https://cf-blast.livelikecdn.com/api/v1";
-      const clientId = "1SwBSVu6sJPSUl4Sth955MG8kBPZ2ARgodPW3jdv";
-      const programId = getProgramId();
-      //const programId = "";
-
-
       ; (async () => {
-
-        const leaderboardId = await getLeaderboardIdAsync({ programId });
-        init(clientId, programId, leaderboardId);
-
+        const programId = getProgramId();
+        const program = await getProgramAsync({ programId });
+        if (!(program && program.leaderboards && program.leaderboards.length)) {
+          console.error("The program has no linked leaderboards!");
+        }
+        init(program.client_id, programId, program.leaderboards[0].id);
+        
+        /* Prevent zoom on IOS */
         document.addEventListener('gesturestart', (e) => { e.preventDefault(); });
       })();
     </script>

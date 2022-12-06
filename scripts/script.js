@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   var tabList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tab"]'));
-  tabList.forEach(function (tab) {
-    tab.addEventListener("shown.bs.tab", function (e) {
+  tabList.forEach((tab) => {
+    tab.addEventListener("shown.bs.tab", (e) => {
       const dot = e.target.getElementsByClassName('dot')[0];
       if (dot) {
         dot.classList.add('hidden');
@@ -145,41 +145,6 @@ const handleResultAnimation = e => {
   }
 
 };
-
-
-function addAMAWidgetFilter(widgets) {
-  //For filtering old widgets (received from timeline resource)
-  let filterAlertWidgets = ({ widgets }) => widgets.filter(widget => widget.kind !== 'text-ask');
-  widgets && (widgets.onInitialWidgetsLoaded = filterAlertWidgets);
-  widgets && (widgets.onMoreWidgetsLoaded = filterAlertWidgets);
-
-  //For filtering new widgets (received from CMS via pubnub)
-  let filterNewAlertWidgets = (widgetPayload) => widgetPayload.kind !== 'text-ask' && widgetPayload;
-  widgets && (widgets.onWidgetReceived = filterNewAlertWidgets);
-};
-
-function addListenersForDot(programId) {
-  LiveLike.addWidgetListener(
-    { programId: programId },
-    (e) => {
-      //New Message
-      //Check if active tab is not chat then remove hidden from dot class
-      let activTab = document.getElementsByClassName("nav-link active")['widget-tab']
-      if (activTab === undefined) {
-        document.querySelector('#widget-tab > img').classList.remove('hidden')
-      }
-    }
-  );
-
-  //const callback = (data) => {
-  //  let activTab = document.getElementsByClassName("nav-link active")['ama-tab']
-  //  if(activTab === undefined) {
-  //      document.querySelector('#ama-tab > img').classList.remove('hidden')
-  //  }
-  //}
-  //
-  //LiveLike.addMessageListener({roomId: roomId}, callback);
-}
 
 const setupLeaderboard = (leaderboardId) => {
   const buildProfileRank = (leaderboardId) => {
