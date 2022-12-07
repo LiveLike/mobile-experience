@@ -44,13 +44,15 @@ const getConfig = async ({ chatroomId }) => {
                 TextColor: "%%TextColor%%",
                 ButtonBackground: "#cf2e25",
                 ButtonBackgroundDisabled: "#7e7e7e",
-                RightOptionBorder: "#",
-                WrongOptionBorder: "#",
-                SelectedOption: "#",
+                RightOptionBorder: "",
+                WrongOptionBorder: "",
+                SelectedOption: "",
                 TabInactive: "#1E2B4A",
                 TabActive: "#1E2B4A",
             }
-        }
+        },
+        // TODO: add possibility to add custom css stylesheet
+        css: []
     };
 
     if (!(chatRoom && chatRoom.custom_data)) {
