@@ -100,30 +100,21 @@ livelike-widgets {
   padding-bottom: 100px;
 }
 
-/* .text-ask-button {
-  font-family: "PSGFont" !important;
-  color: white !important;
-  background-color: #CF2E25 !important;
-  border-radius: 0px !important;
-  line-height: 12px !important;
-  height: 14px;
-} */
-
 .text-ask-button {
-  background: #cf2e25 !important;
+  background: "%%ButtonBackground%%" !important;
   border: unset !important;
   border-radius: 0px !important;
-  color: %%TextColor%% !important;
+  color: "%%TextColor%%" !important;
   margin: 0 !important;
   padding: 3px 20px !important;
   font-style: normal;
 }
 
 .text-ask-button [disabled] {
-  background: #7e7e7e !important;
+  background: "%%ButtonBackgroundDisabled%%" !important;
   border-radius: 0px !important;
   border: unset !important;
-  color: %%TextColor%% !important;
+  color: "%%TextColor%%" !important;
 }
 
 .text-ask-button-label {
@@ -159,8 +150,8 @@ livelike-image-prediction livelike-option[selected][correct],
 livelike-image-prediction-follow-up livelike-option[selected][correct],
 livelike-image-prediction livelike-option[selected][incorrect],
 livelike-image-prediction-follow-up livelike-option[selected][incorrect] {
-  border-color: %%WidgetOptionBackground%% !important;
-  background-color: %%WidgetOptionBackground%% !important;
+  border-color: "%%WidgetOptionBackground%%" !important;
+  background-color: "%%WidgetOptionBackground%%" !important;
 }
 
 .prediction-follow-up-footer-message {
@@ -175,5 +166,5 @@ livelike-image-prediction-follow-up livelike-option[selected][incorrect] {
 .livelike-voting-image-container,
 .livelike-voting-input-container
 {
-  background-color: %%WidgetOptionBackground%% !important;
+  background-color: "%%WidgetOptionBackground%%" !important;
 } */

@@ -36,13 +36,14 @@ const getConfig = async ({ chatroomId }) => {
     var chatRoom = await getChatroomAsync({ chatroomId });
     return {
         style: {
-            font: "",
+            font: "../fonts/Alternate_Gothic_No3_D_Regular.otf",
             colors: {
                 PageBackground: "#0c1324",
                 WidgetBackground: "#21272e",
                 WidgetOptionBackground: "%%WidgetOptionBackground%%",
                 TextColor: "%%TextColor%%",
-                ButtonBackground: "#",
+                ButtonBackground: "#cf2e25",
+                ButtonBackgroundDisabled: "#7e7e7e",
                 RightOptionBorder: "#",
                 WrongOptionBorder: "#",
                 SelectedOption: "#",
@@ -80,8 +81,10 @@ const loadStyleAsync = async ({ chatroomId, styles }) => {
 
             // replace colors
             for (const key in config.style.colors) {
-                css = css.replace(`%%${key}%%`, config.style.colors[key]);
+                css = css.replace(`"%%${key}%%"`, config.style.colors[key]);
             }
+
+            css = css.replace(`%%Font%%`, config.style.font);
 
             appendCss({ css });
         }
