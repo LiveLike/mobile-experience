@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #0c1324;
+  background-color: %%PageBackground%%;
   font-family: "PSGFont";
 }
 
@@ -43,7 +43,7 @@ h1 {
 livelike-image-number-prediction-follow-up {
   /* margin: 10px; */
   font-family: "PSGFont" !important;
-  color: #ffffff;
+  color: %%TextColor%%;
 }
 
 livelike-widget-root {
@@ -51,7 +51,7 @@ livelike-widget-root {
 }
 
 livelike-widget-root livelike-widget-header {
-  background: #21272e;
+  background: %%WidgetBackground%%;
   text-align: start;
   margin-bottom: 15px;
   line-height: 29px;
@@ -59,7 +59,7 @@ livelike-widget-root livelike-widget-header {
 }
 
 livelike-widget-root livelike-widget-body {
-  background-color: #21272e;
+  background-color: %%WidgetBackground%%;
 }
 
 livelike-text-ask {
@@ -159,7 +159,7 @@ span.mini-reaction-count {
   font-weight: 500 !important;
   font-size: 14px;
   line-height: 14px;
-  color: #ffffff;
+  color: %%TextColor%%;
   text-transform: uppercase;
 }
 

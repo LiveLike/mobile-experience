@@ -5,7 +5,7 @@
   margin-left: 0;
   top: 20vh;
   height: 6vh;
-  background-color: #1E2B4A;
+  background-color: %%TabActive%%;
 }
 
 .nav-item {

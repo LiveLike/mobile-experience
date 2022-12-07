@@ -10,7 +10,7 @@ livelike-widget-body {
 }
 
 livelike-title {
-  color: #ffffff;
+  color: %%TextColor%%;
   background-color: #1a2434;
   padding: 2px 14px;
   font-weight: 500;
@@ -32,7 +32,7 @@ livelike-image img {
 }
 
 livelike-option[selected] {
-  background: #252f3e !important;
+  background: %%WidgetOptionBackground%% !important;
 }
 
 livelike-option {
@@ -46,7 +46,7 @@ livelike-widget-root {
 }
 
 livelike-description {
-  color: #ffffff;
+  color: %%TextColor%%;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -54,7 +54,7 @@ livelike-description {
 }
 
 livelike-percentage {
-  color: #ffffff;
+  color: %%TextColor%%;
 }
 
 livelike-progress {
@@ -64,7 +64,7 @@ livelike-progress {
   border-radius: unset;
   top: unset !important;
   margin-top: unset !important;
-  background: #ffffff;
+  background: %%TextColor%%;
 }
 
 livelike-progress[image] {
@@ -72,8 +72,8 @@ livelike-progress[image] {
 }
 
 livelike-widget-root livelike-widget-body livelike-select livelike-option {
-  background: #252f3e !important;
-  background-color: #252f3e !important;
+  background: %%WidgetOptionBackground%% !important;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-select {
@@ -81,7 +81,7 @@ livelike-select {
 }
 
 livelike-option .livelike-voting-image-container {
-  background-color: #252f3e !important;
+  background-color: %%WidgetOptionBackground%% !important;
   min-height: 56px;
   height: 56px;
   display: flex;
@@ -101,7 +101,7 @@ livelike-option .livelike-voting-image-container .image-description-wrapper {
   height: 100%;
   width: calc(80% - 14px);
   position: relative;
-  background-color: #252f3e !important;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-option
@@ -109,7 +109,7 @@ livelike-option
   .image-description-wrapper
   livelike-description {
   padding: 15px 0 0 13px;
-  background-color: #252f3e !important
+  background-color: %%WidgetOptionBackground%% !important
 }
 
 livelike-option[image] {
@@ -117,17 +117,17 @@ livelike-option[image] {
   line-height: 15px;
   font-size: 12px;
   padding: 0px;
-  background-color: #252f3e !important;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-option:not([image]) {
   padding: 0 !important;
-  background-color: #252f3e !important;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-option:not([image]) div:first-child {
   height: 100% !important;
-  background-color: #252f3e !important;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-option:not([image]) livelike-percentage {
@@ -136,7 +136,7 @@ livelike-option:not([image]) livelike-percentage {
 
 livelike-option:not([image]) livelike-description {
   padding: 10px 0 0 14px !important;
-  background-color: #252f3e !important;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-percentage {
@@ -151,7 +151,7 @@ livelike-description[selected],
 livelike-description[selected][incorrect],
 livelike-percentage[selected],
 livelike-percentage[selected][incorrect] {
-  color: #ffffff;
+  color: %%TextColor%%;
 }
 
 livelike-percentage[correct] {
@@ -159,28 +159,28 @@ livelike-percentage[correct] {
 }
 
 livelike-option[selected] {
-  border-color: #ffffff;
-  background-color: #252f3e !important;
+  border-color: %%TextColor%%;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-option[selected][correct] {
   border-color: #00fa64;
-  background-color: #252f3e !important;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-description[correct] {
   color: #00fa64;
-  background-color: #252f3e !important;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-option[selected][incorrect] {
   border-color: #cf2e25;
-  background-color: #252f3e !important;
+  background-color: %%WidgetOptionBackground%% !important;
 }
 
 livelike-progress[selected],
 livelike-progress[selected][incorrect] {
-  background: #ffffff;
+  background: %%TextColor%%;
 }
 
 livelike-progress[correct] {
@@ -189,7 +189,7 @@ livelike-progress[correct] {
 
 livelike-option[correct] {
   border-color: #00fa64;
-  background-color: #252f3e;
+  background-color: %%WidgetOptionBackground%%;
 }
 
 /*  Vote Button Footer */
@@ -212,7 +212,7 @@ livelike-alert livelike-footer {
   background: #cf2e25 !important;
   border: unset !important;
   border-radius: 0px !important;
-  color: #ffffff !important;
+  color: %%TextColor%% !important;
   margin: 0 !important;
   padding: 3px 30px !important;
   font-family: "PSGFont";
@@ -224,7 +224,7 @@ livelike-alert livelike-footer {
   background: #7e7e7e !important;
   border-radius: 0px !important;
   border: unset !important;
-  color: #ffffff !important;
+  color: %%TextColor%% !important;
 }
 
 .voted-text {
@@ -232,7 +232,7 @@ livelike-alert livelike-footer {
   font-style: normal;
   font-size: 16px;
   line-height: 14px;
-  color: #ffffff;
+  color: %%TextColor%%;
   padding-left: 10px;
 }
 
@@ -240,7 +240,7 @@ livelike-alert livelike-footer {
   background: #cf2e25 !important;
   border: unset !important;
   border-radius: 0px !important;
-  color: #ffffff !important;
+  color: %%TextColor%% !important;
   margin: 0 !important;
   padding: 3px 30px !important;
   font-family: "PSGFont";
@@ -251,7 +251,7 @@ livelike-alert livelike-footer {
 .predict-button[disabled] {
   background: #7e7e7e;
   border: unset !important;
-  color: #ffffff !important;
+  color: %%TextColor%% !important;
 }
 
 /* Progress Spacing */
@@ -269,7 +269,7 @@ livelike-option:not([image]) div:first-child livelike-percentage {
 }
 
 .widget-caption {
-  color: #ffffff;
+  color: %%TextColor%%;
 }
 
 .leaderboard-container {
