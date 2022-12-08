@@ -38,12 +38,15 @@ const getConfig = async ({ chatroomId }) => {
         style: {
             font: "../fonts/Alternate_Gothic_No3_D_Regular.otf",
             colors: {
+                LoginPageBackground: "#183561",
                 PageBackground: "#0c1324",
                 WidgetBackground: "#21272e",
                 WidgetOptionBackground: "#272F3D",
                 TextColor: "#ffffff",
                 ButtonBackground: "#cf2e25",
                 ButtonBackgroundDisabled: "#7e7e7e",
+                CreateProfileButton: "#fff",
+                CreateProfileButtonBackground: "#cf2e25",
                 RightOptionBorder: "",
                 WrongOptionBorder: "",
                 SelectedOption: "",

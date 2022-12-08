@@ -33,8 +33,8 @@ livelike-progress {
 }
 
 #createProfileButton {
-  color: white !important;
-  background-color: #cf2e25;
+  color: "__CreateProfileButton__" !important;
+  background-color: "__CreateProfileButtonBackground__";
   width: 144px;
   height: 41px;
   border-radius: 0px;

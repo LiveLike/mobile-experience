@@ -305,7 +305,7 @@ td.pts {
 
 #profile {
   padding-top: 82px;
-  background-color: #183561;
+  background-color: "__LoginPageBackground__";
 }
 
 livelike-image-number-prediction {
