@@ -12,7 +12,7 @@ livelike-widget-body {
 
 livelike-footer {
   background-color: transparent !important;
-  background-color: #183f6c;
+  background-color: "__WidgetBackground__";
 }
 
 livelike-percentatge {

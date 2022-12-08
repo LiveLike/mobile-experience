@@ -195,12 +195,12 @@ livelike-option[correct] {
 /*  Vote Button Footer */
 
 livelike-footer {
-  background-color: #183f6c !important;
+  background-color: "__WidgetBackground__" !important;
   margin: 0 0 6px 14px;
 }
 
 livelike-alert livelike-footer {
-  background-color: #3f454c !important;
+  background-color: "__WidgetBackground__" !important;
   margin: 0 0 6px 14px;
 }
 
