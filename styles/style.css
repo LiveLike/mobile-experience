@@ -232,7 +232,7 @@ td.name {
 
 .active-bage {
   align-items: center;
-  background-image: url("../images/bage.svg");
+  background-image: url("./images/bage.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center left;
