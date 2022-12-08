@@ -44,7 +44,7 @@ const getConfig = async ({ chatroomId }) => {
                 PageBackground: "#0c1324",
                 WidgetBackground: "#21272e",
                 WidgetOptionBackground: "#272F3D",
-                TextColor: "#ffffff",
+                TextColor: "#fff",
                 ButtonBackground: "#cf2e25",
                 ButtonBackgroundDisabled: "#7e7e7e",
                 CreateProfileButton: "#fff",
@@ -56,7 +56,7 @@ const getConfig = async ({ chatroomId }) => {
                 IncorrectOptionBorder: "#cf2e25",
                 IncorrectOptionDescription: "#cf2e25",
                 PredictionFollowUpFooterMessage:"#00fa64",
-                SelectedOption: "",
+                SelectedOption: "#fff",
                 TabInactive: "#1E2B4A",
                 TabActive: "#1E2B4A",
             }

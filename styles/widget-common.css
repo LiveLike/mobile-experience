@@ -159,7 +159,7 @@ livelike-percentage[correct] {
 }
 
 livelike-option[selected] {
-  border-color: "__TextColor__";
+  border-color: "__SelectedOption__";
   background-color: "__WidgetOptionBackground__" !important;
 }
 
