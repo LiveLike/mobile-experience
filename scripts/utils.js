@@ -39,8 +39,8 @@ const getConfig = async ({ chatroomId }) => {
             font: "../fonts/Alternate_Gothic_No3_D_Regular.otf",
             colors: {
                 LoginPageBackground: "#183561",
-                LoginPageInputFieldBackground:"#2f4971",
-                LoginPageInputFieldBorder:"#183f6c",
+                LoginPageInputFieldBackground: "#2f4971",
+                LoginPageInputFieldBorder: "#183f6c",
                 PageBackground: "#0c1324",
                 WidgetBackground: "#1C2433",
                 WidgetOptionBackground: "#272F3D",
@@ -51,12 +51,12 @@ const getConfig = async ({ chatroomId }) => {
                 CreateProfileButton: "#fff",
                 CreateProfileButtonBackground: "#cf2e25",
                 CorrectOptionBorder: "#00fa64",
-                CorrectOptionProgressBackground:  "#00fa64",
-                CorrectOptionPercentage:  "#00fa64",
+                CorrectOptionProgressBackground: "#00fa64",
+                CorrectOptionPercentage: "#00fa64",
                 CorrectOptionDescription: "#00fa64",
                 IncorrectOptionBorder: "#cf2e25",
                 IncorrectOptionDescription: "#cf2e25",
-                PredictionFollowUpFooterMessage:"#00fa64",
+                PredictionFollowUpFooterMessage: "#00fa64",
                 SelectedOption: "#fff",
                 TabInactive: "#1E2B4A",
                 TabActive: "#1E2B4A",
@@ -93,12 +93,14 @@ const loadStyleAsync = async ({ chatroomId, styles }) => {
     for (const stylePath of styles) {
         {
             getRawFileContentAsync({ path: stylePath }).then(css => {
+                // replace font
+                css = css.replaceAll(`__Font__`, config.style.font);
+
                 // replace colors
                 for (const key in config.style.colors) {
                     css = css.replaceAll(`"__${key}__"`, config.style.colors[key]);
                 }
 
-                css = css.replaceAll(`__Font__`, config.style.font);
                 appendCss({ css });
             });
         }
