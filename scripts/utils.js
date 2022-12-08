@@ -45,6 +45,7 @@ const getConfig = async ({ chatroomId }) => {
                 WidgetBackground: "#21272e",
                 WidgetOptionBackground: "#272F3D",
                 TextColor: "#fff",
+                DisabledButton: "#c8c8c8",
                 ButtonBackground: "#cf2e25",
                 ButtonBackgroundDisabled: "#7e7e7e",
                 CreateProfileButton: "#fff",
@@ -59,6 +60,7 @@ const getConfig = async ({ chatroomId }) => {
                 SelectedOption: "#fff",
                 TabInactive: "#1E2B4A",
                 TabActive: "#1E2B4A",
+                TabActiveLineColor: "#cf2e25"
             }
         },
         // TODO: add possibility to add custom css stylesheet

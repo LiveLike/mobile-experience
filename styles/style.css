@@ -173,7 +173,7 @@ span.mini-reaction-count {
 
 .profile-input {
   border: 1px solid "__LoginPageInputFieldBorder__" !important;
-  color: white !important;
+  color: "__TextColor__" !important;
   background-color: "__LoginPageInputFieldBackground__";
 }
 
