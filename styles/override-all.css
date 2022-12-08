@@ -157,5 +157,5 @@ livelike-image-prediction-follow-up livelike-option[selected][incorrect] {
 .prediction-follow-up-footer-message {
   font-family: "ApplicationFont" !important;
   font-weight: 100 !important;
-  color: #00fa64 !important;
+  color: "__PredictionFollowUpFooterMessage__" !important;
 }

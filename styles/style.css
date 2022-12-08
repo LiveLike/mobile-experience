@@ -65,7 +65,7 @@ livelike-widget-root livelike-widget-body {
 livelike-text-ask {
   /* margin: 10px; */
   font-family: "ApplicationFont" !important;
-  color: #ffffff;
+  color: "__TextColor__";
 }
 
 .avatar {
@@ -164,17 +164,17 @@ span.mini-reaction-count {
 }
 
 .form-control {
-  background: #ffffff !important;
-  background-color: #2f4971 !important;
+  background: "__TextColor__" !important;
+  background-color: "__LoginPageInputFieldBackground__" !important;
   font-size: 16px;
   line-height: 16px;
   border-radius: 0 !important;
 }
 
 .profile-input {
-  border: 1px solid #183f6c !important;
+  border: 1px solid "__LoginPageInputFieldBorder__" !important;
   color: white !important;
-  background-color: #183f6c;
+  background-color: "__LoginPageInputFieldBackground__";
 }
 
 livelike-image-number-prediction livelike-option[image] {
@@ -197,7 +197,7 @@ tr.list-item {
 }
 
 .send-icon svg {
-  fill: #ffffff !important;
+  fill: "__TextColor__" !important;
 }
 
 .small-text {
@@ -205,7 +205,7 @@ tr.list-item {
   font-style: normal;
   font-size: 11px;
   line-height: 18px;
-  color: #ffffff;
+  color: "__TextColor__";
   opacity: 0.4;
   margin-top: 4px;
   text-align: center;
@@ -235,7 +235,7 @@ tr.list-item {
   font-style: normal;
   font-size: 14px;
   line-height: 14px;
-  color: #ffffff;
+  color: "__TextColor__";
   padding: 12px;
 }
 
@@ -244,7 +244,7 @@ td.name {
   font-style: normal;
   font-size: 18px;
   line-height: 18px;
-  color: #ffffff;
+  color: "__TextColor__";
 }
 
 .active-bage {
@@ -264,7 +264,7 @@ td.rank {
   text-align: center;
   font-family: "ApplicationFont";
   font-style: normal;
-  color: #ffffff;
+  color: "__TextColor__";
 }
 
 td.pts {
@@ -272,7 +272,7 @@ td.pts {
   font-family: "ApplicationFont";
   font-style: normal;
   line-height: 14px;
-  color: #ffffff;
+  color: "__TextColor__";
 }
 
 .user-profile-points {
@@ -280,7 +280,7 @@ td.pts {
   font-style: normal;
   font-size: 14px;
   line-height: 14px;
-  color: #ffffff;
+  color: "__TextColor__";
   align-self: center;
   margin-bottom: 0px;
 }

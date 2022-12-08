@@ -155,7 +155,7 @@ livelike-percentage[selected][incorrect] {
 }
 
 livelike-percentage[correct] {
-  color: #00fa64;
+  color: "__CorrectOptionPercentage__";
 }
 
 livelike-option[selected] {
@@ -164,17 +164,17 @@ livelike-option[selected] {
 }
 
 livelike-option[selected][correct] {
-  border-color: #00fa64;
+  border-color: "__CorrectOptionBorder__";
   background-color: "__WidgetOptionBackground__" !important;
 }
 
 livelike-description[correct] {
-  color: #00fa64;
+  color: "__CorrectOptionDescription__";
   background-color: "__WidgetOptionBackground__" !important;
 }
 
 livelike-option[selected][incorrect] {
-  border-color: #cf2e25;
+  border-color: "__IncorrectOptionBorder__";
   background-color: "__WidgetOptionBackground__" !important;
 }
 
@@ -184,11 +184,11 @@ livelike-progress[selected][incorrect] {
 }
 
 livelike-progress[correct] {
-  background: #00fa64;
+  background: "__CorrectOptionProgressBackground__";
 }
 
 livelike-option[correct] {
-  border-color: #00fa64;
+  border-color: "__CorrectOptionBorder__";
   background-color: "__WidgetOptionBackground__";
 }
 
