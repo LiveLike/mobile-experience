@@ -454,100 +454,117 @@ body {
   .logo img {
     width: 60px;
   }
+
   livelike-widget-root,
-.responsive-tabs,
-livelike-message-item,
-livelike-chat-composer,
-.livelike-load-more-button {
+  .responsive-tabs,
+  livelike-message-item,
+  livelike-chat-composer,
+  .livelike-load-more-button {
     width: 100%;
     align-self: center;
     margin-bottom: 20px;
   }
+
   .responsive-text {
     font-size: 16px;
   }
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .logo img {
     width: 70px;
   }
+
   livelike-widget-root,
-.responsive-tabs,
-livelike-message-item,
-livelike-chat-composer,
-.livelike-load-more-button {
+  .responsive-tabs,
+  livelike-message-item,
+  livelike-chat-composer,
+  .livelike-load-more-button {
     width: 90%;
     margin: auto;
     margin-bottom: 10px;
   }
+
   .responsive-text {
     font-size: 18px;
   }
 }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo img {
     width: 80px;
   }
+
   livelike-widget-root,
-.responsive-tabs,
-livelike-message-item,
-livelike-chat-composer,
-.livelike-load-more-button {
+  .responsive-tabs,
+  livelike-message-item,
+  livelike-chat-composer,
+  .livelike-load-more-button {
     width: 80%;
     margin: auto;
   }
+
   .responsive-text {
     font-size: 20px;
   }
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .logo img {
     width: 90px;
   }
+
   livelike-widget-root,
-.responsive-tabs,
-livelike-message-item,
-livelike-chat-composer,
-.livelike-load-more-button {
+  .responsive-tabs,
+  livelike-message-item,
+  livelike-chat-composer,
+  .livelike-load-more-button {
     width: 65%;
     margin: auto;
   }
+
   .responsive-text {
     font-size: 22px;
   }
 }
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .logo img {
     width: 100px;
   }
+
   livelike-widget-root,
-.responsive-tabs,
-livelike-message-item,
-livelike-chat-composer,
-.livelike-load-more-button {
+  .responsive-tabs,
+  livelike-message-item,
+  livelike-chat-composer,
+  .livelike-load-more-button {
     width: 55%;
     margin: auto;
   }
+
   .responsive-text {
     font-size: 24px;
   }
 }
+
 @media only screen and (min-width: 1400px) {
   .logo img {
     width: 100px;
   }
+
   livelike-widget-root,
-.responsive-tabs,
-livelike-message-item,
-livelike-chat-composer,
-.livelike-load-more-button {
+  .responsive-tabs,
+  livelike-message-item,
+  livelike-chat-composer,
+  .livelike-load-more-button {
     width: 45%;
     margin: auto;
   }
+
   .responsive-text {
     font-size: 26px;
   }
@@ -663,10 +680,7 @@ livelike-option .livelike-voting-image-container .image-description-wrapper {
   background-color: "__WidgetOptionBackground__" !important;
 }
 
-livelike-option
-  .livelike-voting-image-container
-  .image-description-wrapper
-  livelike-description {
+livelike-option .livelike-voting-image-container .image-description-wrapper livelike-description {
   padding: 15px 0 0 13px;
   background-color: "__WidgetOptionBackground__" !important
 }
@@ -845,4 +859,168 @@ livelike-option:not([image]) div:first-child livelike-percentage {
 
 .widget-link:after {
   top: 7px;
+}
+
+
+/*override everything*/
+
+livelike-description {
+  font-size: 20px;
+}
+
+.nav-link {
+  font-size: 14px;
+}
+
+livelike-widget-body {
+  background-color: "__WidgetBackground__" !important;
+}
+
+livelike-footer {
+  background-color: "__WidgetBackground__" !important;
+}
+
+livelike-percentatge {
+  font-family: "ApplicationFont" !important;
+  padding-right: 3px !important;
+}
+
+td,
+th {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 16px;
+}
+
+livelike-progress {
+  background-color: "__TextColor__" !important;
+  z-index: 100 !important;
+}
+
+#createProfileButton {
+  color: "__CreateProfileButton__" !important;
+  background-color: "__CreateProfileButtonBackground__";
+  width: 144px;
+  height: 41px;
+  border-radius: 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 14px;
+}
+
+#createProfileButton:disabled,
+#createProfileButton[disabled] {
+  color: "__TextColor__" !important;
+  background-color: "__DisabledButton__";
+  text-transform: uppercase;
+  width: 144px;
+  height: 41px;
+  border-radius: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 14px;
+}
+
+.thead-element {
+  font-family: "ApplicationFont";
+  font-style: normal;
+  font-weight: 100 !important;
+  color: "__TextColor__" !important;
+}
+
+.score-label {
+  font-family: "ApplicationFont";
+  font-style: normal;
+  font-weight: 100 !important;
+}
+
+livelike-option livelike-progress:not([changed]) {
+  visibility: hidden !important;
+}
+
+livelike-option livelike-percentage:not([changed]) {
+  visibility: hidden !important;
+}
+
+livelike-image-prediction livelike-progress:not([changed]),
+livelike-text-prediction livelike-progress:not([changed]) {
+  visibility: hidden !important;
+}
+
+livelike-image-prediction livelike-percentage:not([changed]),
+livelike-text-prediction livelike-percentage:not([changed]) {
+  visibility: hidden !important;
+}
+
+
+
+
+livelike-widgets {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.widgets-tab {
+  padding-bottom: 100px;
+}
+
+.text-ask-button {
+  background: "__ButtonBackground__" !important;
+  border: unset !important;
+  border-radius: 0px !important;
+  color: "__TextColor__" !important;
+  margin: 0 !important;
+  padding: 3px 20px !important;
+  font-style: normal;
+}
+
+.text-ask-button [disabled] {
+  background: "__ButtonBackgroundDisabled__" !important;
+  border-radius: 0px !important;
+  border: unset !important;
+  color: "__TextColor__" !important;
+}
+
+.text-ask-button-label {
+  font-weight: 100 !important;
+  font-family: "ApplicationFont";
+  font-size: 14px;
+}
+
+.quiz-confirmation-message {
+  font-size: 16px !important;
+  font-weight: 100 !important;
+}
+
+livelike-image-number-prediction livelike-option[correct],
+livelike-image-number-prediction-follow-up livelike-option[correct],
+livelike-image-number-prediction livelike-option[incorrect],
+livelike-image-number-prediction-follow-up livelike-option[incorrect],
+livelike-image-number-prediction livelike-option[selected][correct],
+livelike-image-number-prediction-follow-up livelike-option[selected][correct],
+livelike-image-number-prediction livelike-option[selected][incorrect],
+livelike-image-number-prediction-follow-up livelike-option[selected][incorrect],
+livelike-text-prediction livelike-option[correct],
+livelike-text-prediction-follow-up livelike-option[correct],
+livelike-text-prediction livelike-option[incorrect],
+livelike-text-prediction-follow-up livelike-option[incorrect],
+livelike-text-prediction livelike-option[selected][correct],
+livelike-text-prediction-follow-up livelike-option[selected][correct],
+livelike-text-prediction livelike-option[selected][incorrect],
+livelike-text-prediction-follow-up livelike-option[selected][incorrect],
+livelike-image-prediction livelike-option[correct],
+livelike-image-prediction-follow-up livelike-option[correct] livelike-image-prediction livelike-option[incorrect] livelike-image-prediction-follow-up livelike-option[incorrect],
+livelike-image-prediction livelike-option[selected][correct],
+livelike-image-prediction-follow-up livelike-option[selected][correct],
+livelike-image-prediction livelike-option[selected][incorrect],
+livelike-image-prediction-follow-up livelike-option[selected][incorrect] {
+  border-color: "__WidgetOptionBackground__" !important;
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+.prediction-follow-up-footer-message {
+  font-family: "ApplicationFont" !important;
+  font-weight: 100 !important;
+  color: "__PredictionFollowUpFooterMessage__" !important;
 }
