@@ -101,20 +101,20 @@ livelike-widgets {
 }
 
 .text-ask-button {
-  background: "%%ButtonBackground%%" !important;
+  background: "__ButtonBackground__" !important;
   border: unset !important;
   border-radius: 0px !important;
-  color: "%%TextColor%%" !important;
+  color: "__TextColor__" !important;
   margin: 0 !important;
   padding: 3px 20px !important;
   font-style: normal;
 }
 
 .text-ask-button [disabled] {
-  background: "%%ButtonBackgroundDisabled%%" !important;
+  background: "__ButtonBackgroundDisabled__" !important;
   border-radius: 0px !important;
   border: unset !important;
-  color: "%%TextColor%%" !important;
+  color: "__TextColor__" !important;
 }
 
 .text-ask-button-label {
@@ -150,8 +150,8 @@ livelike-image-prediction livelike-option[selected][correct],
 livelike-image-prediction-follow-up livelike-option[selected][correct],
 livelike-image-prediction livelike-option[selected][incorrect],
 livelike-image-prediction-follow-up livelike-option[selected][incorrect] {
-  border-color: "%%WidgetOptionBackground%%" !important;
-  background-color: "%%WidgetOptionBackground%%" !important;
+  border-color: "__WidgetOptionBackground__" !important;
+  background-color: "__WidgetOptionBackground__" !important;
 }
 
 .prediction-follow-up-footer-message {

@@ -1,10 +1,10 @@
 @font-face {
   font-family: PSGFont;
-  src: url("%%Font%%") format("opentype");
+  src: url("__Font__") format("opentype");
 }
 
 body {
-  background-color: "%%PageBackground%%";
+  background-color: "__PageBackground__";
   font-family: "PSGFont";
 }
 
@@ -43,7 +43,7 @@ h1 {
 livelike-image-number-prediction-follow-up {
   /* margin: 10px; */
   font-family: "PSGFont" !important;
-  color: "%%TextColor%%";
+  color: "__TextColor__";
 }
 
 livelike-widget-root {
@@ -51,7 +51,7 @@ livelike-widget-root {
 }
 
 livelike-widget-root livelike-widget-header {
-  background: "%%WidgetBackground%%";
+  background: "__WidgetBackground__";
   text-align: start;
   margin-bottom: 15px;
   line-height: 29px;
@@ -59,7 +59,7 @@ livelike-widget-root livelike-widget-header {
 }
 
 livelike-widget-root livelike-widget-body {
-  background-color: "%%WidgetBackground%%";
+  background-color: "__WidgetBackground__";
 }
 
 livelike-text-ask {
@@ -137,7 +137,7 @@ span.mini-reaction-count {
   padding: 9px 14px;
   width: 144px;
   height: 41px;
-  background-color: "%%ButtonBackground%%";
+  background-color: "__ButtonBackground__";
   color: white;
 }
 
@@ -147,7 +147,7 @@ span.mini-reaction-count {
   font-weight: 500 !important;
   font-size: 14px;
   line-height: 14px;
-  color: "%%TextColor%%";
+  color: "__TextColor__";
   text-transform: uppercase;
 }
 
