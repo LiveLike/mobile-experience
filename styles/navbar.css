@@ -19,7 +19,7 @@
 .nav-tabs {
   border: unset !important;
   height: 42px !important;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
 }
 
 .nav-link {
@@ -31,7 +31,7 @@
   background-color: #183561 !important;
   color: white;
   font-size: 12px;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
 }
 
@@ -55,7 +55,7 @@
 .nav-pills .nav-link {
   background-color: #171725;
   border-radius: 0;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 16px;
   color: #5a5a64;
@@ -66,7 +66,7 @@
   color: #CF2E25;
   background-color: #183561;
   border-bottom: 2px solid #f26a16;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 16px;
   line-height: 1.6;

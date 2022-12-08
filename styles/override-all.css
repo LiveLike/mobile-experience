@@ -16,7 +16,7 @@ livelike-footer {
 }
 
 livelike-percentatge {
-  font-family: "PSGFont" !important;
+  font-family: "ApplicationFont" !important;
   padding-right: 3px !important;
 }
 
@@ -58,14 +58,14 @@ livelike-progress {
 }
 
 .thead-element {
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-weight: 100 !important;
   color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .score-label {
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-weight: 100 !important;
 }
@@ -119,7 +119,7 @@ livelike-widgets {
 
 .text-ask-button-label {
   font-weight: 100 !important;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-size: 14px;
 }
 
@@ -155,7 +155,7 @@ livelike-image-prediction-follow-up livelike-option[selected][incorrect] {
 }
 
 .prediction-follow-up-footer-message {
-  font-family: 'PSGFont' !important;
+  font-family: "ApplicationFont" !important;
   font-weight: 100 !important;
   color: #00fa64 !important;
 }

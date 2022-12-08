@@ -1,11 +1,11 @@
 @font-face {
-  font-family: PSGFont;
+  font-family: ApplicationFont;
   src: url("__Font__") format("opentype");
 }
 
 body {
   background-color: "__PageBackground__";
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
 }
 
 h1 {
@@ -42,7 +42,7 @@ h1 {
 
 livelike-image-number-prediction-follow-up {
   /* margin: 10px; */
-  font-family: "PSGFont" !important;
+  font-family: "ApplicationFont" !important;
   color: "__TextColor__";
 }
 
@@ -64,7 +64,7 @@ livelike-widget-root livelike-widget-body {
 
 livelike-text-ask {
   /* margin: 10px; */
-  font-family: "PSGFont" !important;
+  font-family: "ApplicationFont" !important;
   color: #ffffff;
 }
 
@@ -84,7 +84,7 @@ livelike-scroll-down {
 
 span.mini-reaction-count {
   color: #111720;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-size: 15px;
   line-height: 6px;
   margin-left: 6px;
@@ -113,7 +113,7 @@ span.mini-reaction-count {
 }
 
 .leaderboard-table>thead {
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-weight: 500 !important;
   color: rgba(255, 255, 255, 0.4) !important;
@@ -142,7 +142,7 @@ span.mini-reaction-count {
 }
 
 .form-label {
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-weight: 500 !important;
   font-size: 14px;
@@ -153,7 +153,7 @@ span.mini-reaction-count {
 
 .welcome-text {
   text-align: center;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
@@ -201,7 +201,7 @@ tr.list-item {
 }
 
 .small-text {
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 11px;
   line-height: 18px;
@@ -212,7 +212,7 @@ tr.list-item {
 }
 
 .mandatory-text {
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 11px;
   line-height: 18px;
@@ -231,7 +231,7 @@ tr.list-item {
 
 .get-rewarded-text {
   color: white;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 14px;
   line-height: 14px;
@@ -240,7 +240,7 @@ tr.list-item {
 }
 
 td.name {
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 18px;
   line-height: 18px;
@@ -262,21 +262,21 @@ td.name {
 
 td.rank {
   text-align: center;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   color: #ffffff;
 }
 
 td.pts {
   text-align: end;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   line-height: 14px;
   color: #ffffff;
 }
 
 .user-profile-points {
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 14px;
   line-height: 14px;
@@ -309,7 +309,7 @@ td.pts {
 }
 
 livelike-image-number-prediction {
-  font-family: 'PSGFont';
+  font-family: "ApplicationFont";
 }
 
 livelike-image-number-prediction livelike-option[image] {

@@ -15,7 +15,7 @@ livelike-title {
   padding: 2px 14px;
   font-weight: 500;
   font-size: 24px;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   line-height: 25px;
 }
 
@@ -91,7 +91,7 @@ livelike-option .livelike-voting-image-container {
 
 livelike-description {
   font-size: 12px;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   padding: 15px 0 0 13px;
 }
 
@@ -140,7 +140,7 @@ livelike-option:not([image]) livelike-description {
 }
 
 livelike-percentage {
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-size: 22px;
   padding: 0 14px 0 0 !important;
   line-height: 20px;
@@ -215,7 +215,7 @@ livelike-alert livelike-footer {
   color: "__TextColor__" !important;
   margin: 0 !important;
   padding: 3px 30px !important;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 14px;
 }
@@ -228,7 +228,7 @@ livelike-alert livelike-footer {
 }
 
 .voted-text {
-  font-family: "PSGFont" !important;
+  font-family: "ApplicationFont" !important;
   font-style: normal;
   font-size: 16px;
   line-height: 14px;
@@ -243,7 +243,7 @@ livelike-alert livelike-footer {
   color: "__TextColor__" !important;
   margin: 0 !important;
   padding: 3px 30px !important;
-  font-family: "PSGFont";
+  font-family: "ApplicationFont";
   font-style: normal;
   font-size: 14px;
 }
