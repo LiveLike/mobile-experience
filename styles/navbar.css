@@ -58,7 +58,6 @@
   font-family: "ApplicationFont";
   font-style: normal;
   font-size: 16px;
-  color: #5a5a64;
   line-height: 1.6;
 }
 
@@ -77,12 +76,12 @@
 }
 
 .nav li a {
-  color: rgb(110, 110, 110);
+  color: "__TextColor__";
   background-color: "__LoginPageBackground__";
 }
 
 .nav li a:hover {
-  color: rgb(110, 110, 110);
+  color: "__TextColor__";
   background-color: "__LoginPageBackground__";
 }
 

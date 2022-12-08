@@ -60,7 +60,8 @@ const getConfig = async ({ chatroomId }) => {
                 SelectedOption: "#fff",
                 TabInactive: "#1E2B4A",
                 TabActive: "#1E2B4A",
-                TabActiveLineColor: "#cf2e25"
+                TabActiveLineColor: "#cf2e25",
+                RequiredTextColor: "#808080"
             }
         },
         // TODO: add possibility to add custom css stylesheet

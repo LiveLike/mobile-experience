@@ -11,8 +11,7 @@ livelike-widget-body {
 }
 
 livelike-footer {
-  background-color: transparent !important;
-  background-color: "__WidgetBackground__";
+  background-color: "__WidgetBackground__" !important;
 }
 
 livelike-percentatge {
@@ -28,7 +27,7 @@ th {
 }
 
 livelike-progress {
-  background-color: white !important;
+  background-color: "__TextColor__" !important;
   z-index: 100 !important;
 }
 
@@ -46,7 +45,7 @@ livelike-progress {
 
 #createProfileButton:disabled,
 #createProfileButton[disabled] {
-  color: white !important;
+  color: "__TextColor__" !important;
   background-color: "__DisabledButton__";
   text-transform: uppercase;
   width: 144px;
@@ -61,7 +60,7 @@ livelike-progress {
   font-family: "ApplicationFont";
   font-style: normal;
   font-weight: 100 !important;
-  color: rgba(255, 255, 255, 0.4) !important;
+  color: "__TextColor__" !important;
 }
 
 .score-label {

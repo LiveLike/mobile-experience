@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: "__TextColor__";
 }
 
 .content {
@@ -82,15 +82,6 @@ livelike-scroll-down {
   display: none;
 }
 
-span.mini-reaction-count {
-  color: #111720;
-  font-family: "ApplicationFont";
-  font-size: 15px;
-  line-height: 6px;
-  margin-left: 6px;
-  align-self: center;
-}
-
 .mini-reaction-image {
   margin: 0px 0 0 4px !important;
 }
@@ -116,12 +107,12 @@ span.mini-reaction-count {
   font-family: "ApplicationFont";
   font-style: normal;
   font-weight: 500 !important;
-  color: rgba(255, 255, 255, 0.4) !important;
+  color: "__TextColor__" !important;
 }
 
 .profile-container {
   margin-top: 30px;
-  color: white;
+  color: "__TextColor__";
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -138,7 +129,7 @@ span.mini-reaction-count {
   width: 144px;
   height: 41px;
   background-color: "__ButtonBackground__";
-  color: white;
+  color: "__TextColor__";
 }
 
 .form-label {
@@ -192,8 +183,8 @@ livelike-percentage {
 }
 
 tr.list-item {
-  color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: "__TextColor__";
+  border-bottom: 1px solid "__TextColor__";
 }
 
 .send-icon svg {
@@ -216,21 +207,13 @@ tr.list-item {
   font-style: normal;
   font-size: 11px;
   line-height: 18px;
-  color: gray;
+  color: "__RequiredTextColor__";
   margin-top: 8px;
   text-align: center;
 }
 
-.reward-text-container {
-  background: #3f454c;
-  margin: 10px;
-  height: 36px;
-  display: flex;
-  text-decoration: none;
-}
-
 .get-rewarded-text {
-  color: white;
+  color: "__TextColor__";
   font-family: "ApplicationFont";
   font-style: normal;
   font-size: 14px;
@@ -286,7 +269,7 @@ td.pts {
 }
 
 #player>img {
-  background-color: #c0c0c0;
+  background-color: "__LoginPageBackground__";
   width: 100% !important;
   height: 120px;
 }
@@ -313,20 +296,20 @@ livelike-image-number-prediction {
 }
 
 livelike-image-number-prediction livelike-option[image] {
-  background-color: #252F3E !important;
-  border: 1px solid #252F3E !important;
+  background-color: "__WidgetBackground__" !important;
+  border: 1px solid "__WidgetBackground__" !important;
 }
 
 livelike-image-number-prediction livelike-option[image] .livelike-voting-image-container {
-  background-color: #252F3E !important;
+  background-color: "__WidgetBackground__" !important;
 }
 
 livelike-image-number-prediction livelike-option[image] .livelike-voting-input-container {
-  background-color: #252F3E !important;
+  background-color: "__WidgetBackground__" !important;
 }
 
 livelike-image-number-prediction .livelike-voting-number-input {
-  background-color: #1A2434 !important;
-  border: 1px solid #1A2434 !important;
-  color: #FFFFFF !important;
+  background-color: "__WidgetBackground__" !important;
+  border: 1px solid "__WidgetBackground__" !important;
+  color: "__TextColor__" !important;
 }
