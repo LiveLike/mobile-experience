@@ -554,3 +554,295 @@ livelike-chat-composer,
 }
 
 /*# sourceMappingURL=media_query.css.map */
+
+/* Widget common */
+
+livelike-widget-root {
+  background-color: "__WidgetBackground__" !important;
+  border-radius: 0;
+}
+
+livelike-widget-header,
+livelike-widget-body {
+  background-color: "__WidgetBackground__" !important;
+  background: "__WidgetBackground__";
+}
+
+livelike-title {
+  color: "__TextColor__";
+  background-color: "__WidgetBackground__";
+  padding: 2px 14px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "ApplicationFont";
+  line-height: 25px;
+}
+
+livelike-image {
+  height: 60px;
+  width: 60px;
+}
+
+livelike-image img {
+  height: 58px;
+  width: 58px;
+  z-index: 0;
+  transform: translateX(-1px);
+}
+
+livelike-option[selected] {
+  background: "__WidgetOptionBackground__" !important;
+}
+
+livelike-option {
+  border-radius: 5px !important;
+  height: 60px;
+  margin: 10px;
+}
+
+livelike-widget-root {
+  margin-bottom: 10px;
+}
+
+livelike-description {
+  color: "__TextColor__";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* margin-top:12px */
+}
+
+livelike-percentage {
+  color: "__TextColor__";
+}
+
+livelike-progress {
+  bottom: 14px;
+  left: 14px;
+  height: 4px;
+  border-radius: unset;
+  top: unset !important;
+  margin-top: unset !important;
+  background: "__TextColor__";
+}
+
+livelike-progress[image] {
+  height: 4px !important;
+}
+
+livelike-widget-root livelike-widget-body livelike-select livelike-option {
+  background: "__WidgetOptionBackground__" !important;
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-select {
+  background-color: "__WidgetBackground__" !important;
+}
+
+livelike-option .livelike-voting-image-container {
+  background-color: "__WidgetOptionBackground__" !important;
+  min-height: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+livelike-description {
+  font-size: 12px;
+  font-family: "ApplicationFont";
+  padding: 15px 0 0 13px;
+}
+
+livelike-option .livelike-voting-image-container .image-description-wrapper {
+  font-size: 15px;
+  display: flex;
+  height: 100%;
+  width: calc(80% - 14px);
+  position: relative;
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-option
+  .livelike-voting-image-container
+  .image-description-wrapper
+  livelike-description {
+  padding: 15px 0 0 13px;
+  background-color: "__WidgetOptionBackground__" !important
+}
+
+livelike-option[image] {
+  flex-direction: row-reverse;
+  line-height: 15px;
+  font-size: 12px;
+  padding: 0px;
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-option:not([image]) {
+  padding: 0 !important;
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-option:not([image]) div:first-child {
+  height: 100% !important;
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-option:not([image]) livelike-percentage {
+  align-self: center;
+}
+
+livelike-option:not([image]) livelike-description {
+  padding: 10px 0 0 14px !important;
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-percentage {
+  font-family: "ApplicationFont";
+  font-size: 22px;
+  padding: 0 14px 0 0 !important;
+  line-height: 20px;
+}
+
+/* Correct / Incorrect / Selected*/
+livelike-description[selected],
+livelike-description[selected][incorrect],
+livelike-percentage[selected],
+livelike-percentage[selected][incorrect] {
+  color: "__TextColor__";
+}
+
+livelike-percentage[correct] {
+  color: "__CorrectOptionPercentage__";
+}
+
+livelike-option[selected] {
+  border-color: "__SelectedOption__";
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-option[selected][correct] {
+  border-color: "__CorrectOptionBorder__";
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-description[correct] {
+  color: "__CorrectOptionDescription__";
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-option[selected][incorrect] {
+  border-color: "__IncorrectOptionBorder__";
+  background-color: "__WidgetOptionBackground__" !important;
+}
+
+livelike-progress[selected],
+livelike-progress[selected][incorrect] {
+  background: "__TextColor__";
+}
+
+livelike-progress[correct] {
+  background: "__CorrectOptionProgressBackground__";
+}
+
+livelike-option[correct] {
+  border-color: "__CorrectOptionBorder__";
+  background-color: "__WidgetOptionBackground__";
+}
+
+/*  Vote Button Footer */
+
+livelike-footer {
+  background-color: "__WidgetBackground__" !important;
+  margin: 0 0 6px 14px;
+}
+
+livelike-alert livelike-footer {
+  background-color: "__WidgetBackground__" !important;
+  margin: 0 0 6px 14px;
+}
+
+.widget-link:after {
+  top: 8px;
+}
+
+.vote-button {
+  background: "__ButtonBackground__" !important;
+  border: unset !important;
+  border-radius: 0px !important;
+  color: "__TextColor__" !important;
+  margin: 0 !important;
+  padding: 3px 30px !important;
+  font-family: "ApplicationFont";
+  font-style: normal;
+  font-size: 14px;
+}
+
+.vote-button[disabled] {
+  background: "__ButtonBackgroundDisabled__" !important;
+  border-radius: 0px !important;
+  border: unset !important;
+  color: "__TextColor__" !important;
+}
+
+.voted-text {
+  font-family: "ApplicationFont" !important;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 14px;
+  color: "__TextColor__";
+  padding-left: 10px;
+}
+
+.predict-button {
+  background: "__ButtonBackground__" !important;
+  border: unset !important;
+  border-radius: 0px !important;
+  color: "__TextColor__" !important;
+  margin: 0 !important;
+  padding: 3px 30px !important;
+  font-family: "ApplicationFont";
+  font-style: normal;
+  font-size: 14px;
+}
+
+.predict-button[disabled] {
+  background: "__ButtonBackgroundDisabled__";
+  border: unset !important;
+  color: "__TextColor__" !important;
+}
+
+/* Progress Spacing */
+
+livelike-option:not([image]) div:first-child {
+  width: 80% !important;
+}
+
+livelike-percentage {
+  transform: translateX(20%);
+}
+
+livelike-option:not([image]) div:first-child livelike-percentage {
+  left: 25%;
+}
+
+.widget-caption {
+  color: "__TextColor__";
+}
+
+.leaderboard-container {
+  padding: 12px;
+  height: calc(100% - 168px);
+  overflow-y: auto;
+}
+
+.widget-link {
+  background-color: unset !important;
+  padding: unset;
+  color: "__TextColor__";
+}
+
+.widget-link:after {
+  top: 7px;
+}
