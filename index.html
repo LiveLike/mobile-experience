@@ -18,7 +18,7 @@
     <div class="static-content-top">
 
       <div id="player">
-        <img id="static-header-image" src="./images/small-header.jpg" alt="">
+        <img id="static-header-image" src="" alt="">
       </div>
 
       <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -95,8 +95,9 @@
   <script>
     const baseUrl = "https://cf-blast.livelikecdn.com/api/v1";
     const styles = ["./styles/style.css"];
-
+    let __CONFIG__ = null;
     ; (async () => {
+
       const programId = getProgramId();
       const program = await getProgramAsync({ programId });
       if (!(program && program.leaderboards && program.leaderboards.length)) {

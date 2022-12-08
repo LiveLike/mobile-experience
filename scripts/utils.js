@@ -36,6 +36,8 @@ const getConfig = async ({ chatroomId }) => {
     var chatRoom = await getChatroomAsync({ chatroomId });
     return {
         style: {
+            smallHeader: "./images/header-small.jpg",
+            loginHeader: "./images/header-login.jpg",
             font: "../fonts/Alternate_Gothic_No3_D_Regular.otf",
             colors: {
                 LoginPageBackground: "#183561",
@@ -90,6 +92,7 @@ const getRawFileContentAsync = async ({ path }) => {
 
 const loadStyleAsync = async ({ chatroomId, styles }) => {
     const config = await getConfig({ chatroomId });
+    __CONFIG__ = config;
     for (const stylePath of styles) {
         {
             getRawFileContentAsync({ path: stylePath }).then(css => {
@@ -138,9 +141,8 @@ const showAllTabs = () => {
     document.getElementById('profile-nav-tab').style.display = 'none';
     document.querySelector('#widget-tab').click();
     const staticHeaderImage = document.getElementById("static-header-image");
-    staticHeaderImage.setAttribute("src", "./images/small-header.jpg");
+    staticHeaderImage.setAttribute("src", __CONFIG__.style.smallHeader);
     staticHeaderImage.style.height = "120px";
-
 };
 
 const updateUserProfile = ({ nickname, custom_data }) => {
@@ -187,7 +189,7 @@ const showProfileTab = () => {
     document.querySelector('#leaderboard-nav-tab').style.display = 'none';
     document.getElementById('profile-tab-label').click();
     const staticHeaderImage = document.getElementById('static-header-image');
-    staticHeaderImage.setAttribute("src", "./images/login-header.jpg");
+    staticHeaderImage.setAttribute("src", __CONFIG__.style.loginHeader);
     staticHeaderImage.style.height = "220px";
 };
 
@@ -199,5 +201,8 @@ const showProfileTabIfFirstTimeVisiting = () => {
         document.getElementById("player").style.display = "grid";
         document.getElementById('profile-nav-tab').style.display = 'none';
         document.getElementById('widget-tab').click();
+        const staticHeaderImage = document.getElementById("static-header-image");
+        staticHeaderImage.setAttribute("src", __CONFIG__.style.smallHeader);
+        staticHeaderImage.style.height = "120px";
     }
 };
