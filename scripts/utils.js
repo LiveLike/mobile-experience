@@ -42,7 +42,7 @@ const getConfig = async ({ chatroomId }) => {
                 LoginPageInputFieldBackground:"#2f4971",
                 LoginPageInputFieldBorder:"#183f6c",
                 PageBackground: "#0c1324",
-                WidgetBackground: "#21272e",
+                WidgetBackground: "#1C2433",
                 WidgetOptionBackground: "#272F3D",
                 TextColor: "#fff",
                 DisabledButton: "#c8c8c8",
