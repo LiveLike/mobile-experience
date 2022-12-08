@@ -38,7 +38,7 @@ const getConfig = async ({ chatroomId }) => {
         style: {
             smallHeader: "./images/header-small.jpg",
             loginHeader: "./images/header-login.jpg",
-            font: "../fonts/Alternate_Gothic_No3_D_Regular.otf",
+            font: "./fonts/Alternate_Gothic_No3_D_Regular.otf",
             colors: {
                 LoginPageBackground: "#183561",
                 LoginPageInputFieldBackground: "#2f4971",
