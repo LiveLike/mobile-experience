@@ -1024,3 +1024,7 @@ livelike-image-prediction-follow-up livelike-option[selected][incorrect] {
   font-weight: 100 !important;
   color: "__Successful__" !important;
 }
+
+.current-profile-list-item {
+  background-color: "__Unsuccessful__";
+}
