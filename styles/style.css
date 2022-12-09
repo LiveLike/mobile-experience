@@ -207,7 +207,7 @@ tr.list-item {
   font-style: normal;
   font-size: 11px;
   line-height: 18px;
-  color: "__DisabledButton__";
+  color: "__ButtonDisabled__";
   margin-top: 8px;
   text-align: center;
 }
@@ -782,7 +782,7 @@ livelike-alert livelike-footer {
 }
 
 .vote-button {
-  background: "Button" !important;
+  background: "__Button__" !important;
   border: unset !important;
   border-radius: 0px !important;
   color: "__TextColor__" !important;
@@ -912,7 +912,7 @@ livelike-progress {
 #createProfileButton:disabled,
 #createProfileButton[disabled] {
   color: "__TextColor__" !important;
-  background-color: "__DisabledButton__";
+  background-color: "__ButtonDisabled__" !important;
   text-transform: uppercase;
   width: 144px;
   height: 41px;
@@ -966,7 +966,7 @@ livelike-widgets {
 }
 
 .text-ask-button {
-  background: "Button" !important;
+  background: "__Button__" !important;
   border: unset !important;
   border-radius: 0px !important;
   color: "__TextColor__" !important;
