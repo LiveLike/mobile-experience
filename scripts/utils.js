@@ -33,7 +33,7 @@ const appendCss = ({ css }) => {
 };
 
 const getConfig = async ({ chatroomId }) => {
-    var chatRoom = await getChatroomAsync({ chatroomId });
+    console.log("chatroomId:", chatroomId);
     return {
         style: {
             smallHeader: "./images/header-small.jpg",
@@ -59,7 +59,8 @@ const getConfig = async ({ chatroomId }) => {
         // TODO: add possibility to add custom css stylesheet
         css: []
     };
-
+    
+    const chatRoom = await getChatroomAsync({ chatroomId });
     if (!(chatRoom && chatRoom.custom_data)) {
         console.error("chatroom is not configured or missing custom_data");
     }
