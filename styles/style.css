@@ -128,7 +128,7 @@ livelike-scroll-down {
   padding: 9px 14px;
   width: 144px;
   height: 41px;
-  background-color: "__ButtonBackground__";
+  background-color: "Button";
   color: "__TextColor__";
 }
 
@@ -156,16 +156,16 @@ livelike-scroll-down {
 
 .form-control {
   background: "__TextColor__" !important;
-  background-color: "__LoginPageInputFieldBackground__" !important;
+  background-color: "__WidgetBackground__" !important;
   font-size: 16px;
   line-height: 16px;
   border-radius: 0 !important;
 }
 
 .profile-input {
-  border: 1px solid "__LoginPageInputFieldBorder__" !important;
+  border: 1px solid "__BannerBackground__" !important;
   color: "__TextColor__" !important;
-  background-color: "__LoginPageInputFieldBackground__";
+  background-color: "__WidgetBackground__";
 }
 
 livelike-image-number-prediction livelike-option[image] {
@@ -207,7 +207,7 @@ tr.list-item {
   font-style: normal;
   font-size: 11px;
   line-height: 18px;
-  color: "__RequiredTextColor__";
+  color: "__DisabledButton__";
   margin-top: 8px;
   text-align: center;
 }
@@ -269,7 +269,7 @@ td.pts {
 }
 
 #player>img {
-  background-color: "__LoginPageBackground__";
+  background-color: "__PageBackground__";
   width: 100% !important;
   height: 120px;
 }
@@ -288,7 +288,7 @@ td.pts {
 
 #profile {
   padding-top: 82px;
-  background-color: "__LoginPageBackground__";
+  background-color: "__PageBackground__";
 }
 
 livelike-image-number-prediction {
@@ -323,7 +323,7 @@ livelike-image-number-prediction .livelike-voting-number-input {
   margin-left: 0;
   top: 20vh;
   height: 6vh;
-  background-color: "__TabActive__";
+  background-color: "__NavTab__";
 }
 
 .nav-item {
@@ -331,7 +331,7 @@ livelike-image-number-prediction .livelike-voting-number-input {
 }
 
 .nav-item {
-  border-left: 1px #111720 solid;
+  border-left: 1px "__PageBackground__" solid;
 }
 
 .nav-tabs {
@@ -346,18 +346,23 @@ livelike-image-number-prediction .livelike-voting-number-input {
   justify-content: center;
   height: 100%;
   padding: 8px;
-  background-color: "__LoginPageBackground__" !important;
-  color: "__TextColor__";
+  background-color: "__NavTab__" !important;
+  color: "__NavTabText__";
   font-size: 12px;
   font-family: "ApplicationFont";
   font-style: normal;
 }
 
-.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-item.show .nav-link {
+  color: "__NavTabText__" !important;
+  border-color: "__NavTab__" "__NavTab__" "__NavTab__" !important;
+  background-color: "__NavTab__" !important;
+}
+
 .nav-tabs .nav-link.active {
-  color: "__TextColor__" !important;
-  border-color: "__LoginPageBackground__" "__LoginPageBackground__" "__LoginPageBackground__" !important;
-  background-color: "__LoginPageBackground__" !important;
+  color: "__ActiveNavTabText__" !important;
+  border-color: "__ActiveNavTab__" "__ActiveNavTab__" "__ActiveNavTab__" !important;
+  background-color: "__ActiveNavTab__" !important;
 }
 
 .nav-tabs .nav-link {
@@ -367,11 +372,11 @@ livelike-image-number-prediction .livelike-voting-number-input {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active span {
-  border-bottom: 2px solid "__TabActiveLineColor__";
+  border-bottom: 2px solid "__Unsuccessful__";
 }
 
 .nav-pills .nav-link {
-  background-color: "__LoginPageBackground__" !important;
+  background-color: "__NavTab__" !important;
   border-radius: 0;
   font-family: "ApplicationFont";
   font-style: normal;
@@ -380,9 +385,9 @@ livelike-image-number-prediction .livelike-voting-number-input {
 }
 
 .nav-pills .nav-link.active {
-  color: "__TabActiveLineColor__";
-  background-color: "__LoginPageBackground__";
-  border-bottom: 2px solid #f26a16;
+  color: "__ActiveNavTabText__";
+  background-color: "__ActiveNavTab__";
+  border-bottom: 2px solid "__Unsuccessful__";
   font-family: "ApplicationFont";
   font-style: normal;
   font-size: 16px;
@@ -390,17 +395,12 @@ livelike-image-number-prediction .livelike-voting-number-input {
 }
 
 .nav-pills .nav-link.active a {
-  background-color: "__LoginPageBackground__";
+  background-color: "__ActiveNavTab__";
 }
 
 .nav li a {
-  color: "__TextColor__";
-  background-color: "__LoginPageBackground__";
-}
-
-.nav li a:hover {
-  color: "__TextColor__";
-  background-color: "__LoginPageBackground__";
+  color: "__NavTabText__";
+  background-color: "__NavTab__";
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -608,7 +608,7 @@ livelike-image img {
 }
 
 livelike-option[selected] {
-  background: "__WidgetOptionBackground__" !important;
+  background: "__WidgetOption__" !important;
 }
 
 livelike-option {
@@ -648,8 +648,8 @@ livelike-progress[image] {
 }
 
 livelike-widget-root livelike-widget-body livelike-select livelike-option {
-  background: "__WidgetOptionBackground__" !important;
-  background-color: "__WidgetOptionBackground__" !important;
+  background: "__WidgetOption__" !important;
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-select {
@@ -657,7 +657,7 @@ livelike-select {
 }
 
 livelike-option .livelike-voting-image-container {
-  background-color: "__WidgetOptionBackground__" !important;
+  background-color: "__WidgetOption__" !important;
   min-height: 56px;
   height: 56px;
   display: flex;
@@ -677,12 +677,12 @@ livelike-option .livelike-voting-image-container .image-description-wrapper {
   height: 100%;
   width: calc(80% - 14px);
   position: relative;
-  background-color: "__WidgetOptionBackground__" !important;
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-option .livelike-voting-image-container .image-description-wrapper livelike-description {
   padding: 15px 0 0 13px;
-  background-color: "__WidgetOptionBackground__" !important
+  background-color: "__WidgetOption__" !important
 }
 
 livelike-option[image] {
@@ -690,17 +690,17 @@ livelike-option[image] {
   line-height: 15px;
   font-size: 12px;
   padding: 0px;
-  background-color: "__WidgetOptionBackground__" !important;
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-option:not([image]) {
   padding: 0 !important;
-  background-color: "__WidgetOptionBackground__" !important;
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-option:not([image]) div:first-child {
   height: 100% !important;
-  background-color: "__WidgetOptionBackground__" !important;
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-option:not([image]) livelike-percentage {
@@ -709,7 +709,7 @@ livelike-option:not([image]) livelike-percentage {
 
 livelike-option:not([image]) livelike-description {
   padding: 10px 0 0 14px !important;
-  background-color: "__WidgetOptionBackground__" !important;
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-percentage {
@@ -728,27 +728,27 @@ livelike-percentage[selected][incorrect] {
 }
 
 livelike-percentage[correct] {
-  color: "__CorrectOptionPercentage__";
+  color: "__TextColor__";
 }
 
 livelike-option[selected] {
-  border-color: "__SelectedOption__";
-  background-color: "__WidgetOptionBackground__" !important;
+  border-color: "__WidgetSelectedOption__";
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-option[selected][correct] {
-  border-color: "__CorrectOptionBorder__";
-  background-color: "__WidgetOptionBackground__" !important;
+  border-color: "__Successful__";
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-description[correct] {
-  color: "__CorrectOptionDescription__";
-  background-color: "__WidgetOptionBackground__" !important;
+  color: "__TextColor__";
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-option[selected][incorrect] {
-  border-color: "__IncorrectOptionBorder__";
-  background-color: "__WidgetOptionBackground__" !important;
+  border-color: "__Unsuccessful__";
+  background-color: "__WidgetOption__" !important;
 }
 
 livelike-progress[selected],
@@ -757,12 +757,12 @@ livelike-progress[selected][incorrect] {
 }
 
 livelike-progress[correct] {
-  background: "__CorrectOptionProgressBackground__";
+  background: "__TextColor__";
 }
 
 livelike-option[correct] {
-  border-color: "__CorrectOptionBorder__";
-  background-color: "__WidgetOptionBackground__";
+  border-color: "__Successful__";
+  background-color: "__WidgetOption__";
 }
 
 /*  Vote Button Footer */
@@ -782,7 +782,7 @@ livelike-alert livelike-footer {
 }
 
 .vote-button {
-  background: "__ButtonBackground__" !important;
+  background: "Button" !important;
   border: unset !important;
   border-radius: 0px !important;
   color: "__TextColor__" !important;
@@ -794,7 +794,7 @@ livelike-alert livelike-footer {
 }
 
 .vote-button[disabled] {
-  background: "__ButtonBackgroundDisabled__" !important;
+  background: "__ButtonDisabled__" !important;
   border-radius: 0px !important;
   border: unset !important;
   color: "__TextColor__" !important;
@@ -810,7 +810,7 @@ livelike-alert livelike-footer {
 }
 
 .predict-button {
-  background: "__ButtonBackground__" !important;
+  background: "Button" !important;
   border: unset !important;
   border-radius: 0px !important;
   color: "__TextColor__" !important;
@@ -822,7 +822,7 @@ livelike-alert livelike-footer {
 }
 
 .predict-button[disabled] {
-  background: "__ButtonBackgroundDisabled__";
+  background: "__ButtonDisabled__";
   border: unset !important;
   color: "__TextColor__" !important;
 }
@@ -898,8 +898,8 @@ livelike-progress {
 }
 
 #createProfileButton {
-  color: "__CreateProfileButton__" !important;
-  background-color: "__CreateProfileButtonBackground__";
+  color: "__TextColor__" !important;
+  background-color: "__Button__";
   width: 144px;
   height: 41px;
   border-radius: 0px;
@@ -966,7 +966,7 @@ livelike-widgets {
 }
 
 .text-ask-button {
-  background: "__ButtonBackground__" !important;
+  background: "Button" !important;
   border: unset !important;
   border-radius: 0px !important;
   color: "__TextColor__" !important;
@@ -976,7 +976,7 @@ livelike-widgets {
 }
 
 .text-ask-button [disabled] {
-  background: "__ButtonBackgroundDisabled__" !important;
+  background: "__ButtonDisabled__" !important;
   border-radius: 0px !important;
   border: unset !important;
   color: "__TextColor__" !important;
@@ -1015,12 +1015,14 @@ livelike-image-prediction livelike-option[selected][correct],
 livelike-image-prediction-follow-up livelike-option[selected][correct],
 livelike-image-prediction livelike-option[selected][incorrect],
 livelike-image-prediction-follow-up livelike-option[selected][incorrect] {
-  border-color: "__WidgetOptionBackground__" !important;
-  background-color: "__WidgetOptionBackground__" !important;
+  border-color: "__WidgetOption__" !important;
+  background-color: "__WidgetOption__" !important;
 }
 
 .prediction-follow-up-footer-message {
   font-family: "ApplicationFont" !important;
   font-weight: 100 !important;
-  color: "__PredictionFollowUpFooterMessage__" !important;
+  color: "__Successful__" !important;
 }
+
+.
