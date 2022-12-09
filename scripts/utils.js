@@ -33,38 +33,36 @@ const appendCss = ({ css }) => {
 };
 
 const getConfig = async ({ chatroomId }) => {
-    console.log("chatroomId:", chatroomId);
-    return {
-        style: {
-            smallHeader: "./images/header-small.jpg",
-            loginHeader: "./images/header-login.jpg",
-            font: "./fonts/Alternate_Gothic_No3_D_Regular.otf",
-            colors: {
-                PageBackground: "#0C1324",
-                BannerBackground: "#164684",
-                ActiveNavTab: "#0C1324",
-                ActiveNavTabText: "#FFFFFF",
-                NavTab: "#FFFFFF",
-                NavTabText: "#B7B9BC",
-                WidgetBackground: "#1C2433",
-                TextColor: "#FFFFFF",
-                Unsuccessful: "#CF2E25",
-                Successful: "#3DCF25",
-                Button: "#CF2E25",
-                ButtonDisabled: "#6B6B6B",
-                WidgetOption: "#272F3D",
-                WidgetSelectedOption: "#394559"
-            }
-        },
-        // TODO: add possibility to add custom css stylesheet
-        css: []
-    };
-    
+    // console.log("chatroomId:", chatroomId);
+    // return {
+    //     "style": {
+    //         "smallHeader": "./images/header-small.jpg",
+    //         "loginHeader": "./images/header-login.jpg",
+    //         "font": "./fonts/Alternate_Gothic_No3_D_Regular.otf",
+    //         "colors": {
+    //             "PageBackground": "#0C1324",
+    //             "BannerBackground": "#164684",
+    //             "ActiveNavTab": "#0C1324",
+    //             "ActiveNavTabText": "#FFFFFF",
+    //             "NavTab": "#FFFFFF",
+    //             "NavTabText": "#B7B9BC",
+    //             "WidgetBackground": "#1C2433",
+    //             "TextColor": "#FFFFFF",
+    //             "Unsuccessful": "#CF2E25",
+    //             "Successful": "#3DCF25",
+    //             "Button": "#CF2E25",
+    //             "ButtonDisabled": "#6B6B6B",
+    //             "WidgetOption": "#272F3D",
+    //             "WidgetSelectedOption": "#394559"
+    //         }
+    //     },
+    //     "css": []
+    // }
+
     const chatRoom = await getChatroomAsync({ chatroomId });
     if (!(chatRoom && chatRoom.custom_data)) {
         console.error("chatroom is not configured or missing custom_data");
     }
-    console.log(JSON.parse(chatRoom.custom_data));
     return JSON.parse(chatRoom.custom_data);
 };
 
