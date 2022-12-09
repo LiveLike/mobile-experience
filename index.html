@@ -96,14 +96,18 @@
     const styles = ["./styles/style.css"];
     let __CONFIG__ = null;
     ; (async () => {
-
       const programId = getProgramId();
       const program = await getProgramAsync({ programId });
+      if (!program) {
+        showErrorPage("Invalid program id!")
+      }
       if (!(program && program.leaderboards && program.leaderboards.length)) {
-        console.error("The program has no linked leaderboards!");
+        showErrorPage("The program has no linked leaderboards!");
+        return;
       }
       if (!(program && program.default_chat_room)) {
-        console.error("The program has no default chatroom!");
+        showErrorPage("The program has no default chatroom!");
+        return;
       }
 
       await loadStyleAsync({ chatroomId: program.default_chat_room.id, styles });

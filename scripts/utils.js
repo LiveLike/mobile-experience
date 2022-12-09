@@ -10,13 +10,35 @@ const getProgramId = () => {
     return getQueryParam("program_id");
 };
 
+const showErrorPage = (errorMessage) => {
+    console.error(errorMessage);
+    const container = document.querySelector(".container");
+    container.classList = ["error-container"];
+    container.innerHTML = `
+<h1 class="error-text">Error!</h1>
+<p class="error-description">Please make sure the url is correct!</p>
+`;
+    const style = document.createElement("style");
+    style.innerHTML = `
+body {
+    background-color: #000;
+    color: #f00;
+}
+.error-container {
+    margin-top: calc(50vh - 50px);;
+    text-align: center;
+}
+`;
+    document.querySelector("head").appendChild(style)
+};
+
 const getProgramAsync = async ({ programId }) => {
     const response = await fetch(`${baseUrl}/programs/${programId}/`);
     if (response.ok) {
         const program = await response.json();
         return program;
     }
-    console.error("Invalid program id!");
+    return null;
 };
 
 const getChatroomAsync = async ({ chatroomId }) => {
