@@ -201,7 +201,7 @@ const showProfileTab = () => {
     document.getElementById('profile-tab-label').click();
     const staticHeaderImage = document.getElementById('static-header-image');
     staticHeaderImage.setAttribute("src", __CONFIG__.style.loginHeader);
-    staticHeaderImage.style.height = "220px";
+    staticHeaderImage.style.height = "25vh";
 };
 
 const showProfileTabIfFirstTimeVisiting = () => {
@@ -214,6 +214,6 @@ const showProfileTabIfFirstTimeVisiting = () => {
         document.getElementById('widget-tab').click();
         const staticHeaderImage = document.getElementById("static-header-image");
         staticHeaderImage.setAttribute("src", __CONFIG__.style.smallHeader);
-        staticHeaderImage.style.height = "120px";
+        staticHeaderImage.style.height = "15vh";
     }
 };
